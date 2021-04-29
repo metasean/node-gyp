@@ -40,9 +40,9 @@ To see if `Xcode Command Line Tools` is installed in a way that will work with `
 curl -sL https://github.com/nodejs/node-gyp/raw/master/macOS_Catalina_acid_test.sh | bash
 ```
 
-If test succeeded, _you are done_! You should be ready to [install](https://github.com/nodejs/node-gyp#installation) `node-gyp`.
+If the response is "Command Line Tools version:" with a version number, then the test succeeded and _you are done_! You should be ready to [install](https://github.com/nodejs/node-gyp#installation) `node-gyp`.
 
-If test failed, there is a problem with your Xcode Command Line Tools installation. [Continue to Solutions](#Solutions).
+If the response is "Command Line Tools not found" the test failed, there is a problem with your Xcode Command Line Tools installation. [Continue to Solutions](#Solutions).
 
 ### Solutions
 There are three ways to install the Xcode libraries `node-gyp` needs on macOS. People running Catalina have had success with some but not others in a way that has been unpredictable.
